@@ -3,7 +3,7 @@
     font-family: sans-serif;
     color: #fff;    box-sizing: border-box; /*formato general*/
     margin: 0;
-    padding: 0;
+    padding: 2;
     font-family: sans-serif;
 }
 h1{font-size: 3.6em;}
@@ -21,8 +21,8 @@ body{
     text-align: justify;
     display: flex;
     background-color: #ff6d67;
-    padding: 0;
-    margin-bottom: 600px;
+    padding: 10px;
+    margin-bottom: 350px;
 }
 
 #Quienes_Somos li{

@@ -1,16 +1,74 @@
-html, body{
-    width: 260px;
-    justify-content: center;
-    padding-top: 1%;
-    padding-inline-start: 350px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
-  } 
+* {
+  box-sizing: border-box;
+}
 
-  .foto{
-    float: left;
-    padding: 10px;
-    display: flex;
-    margin-left: -200%; 
-  
+body {
+  background: #ff6d67;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.9;
+  font-family: sans-serif;
+  padding: 0 27em;
+}
+
+.img-container{
+  background-image: url("Nueva_Gestion-preview.png");
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+  width: 150px;
   }
+
+  .container1{
+    background-color: #fff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-form {
+  background: #fff;
+}
+
+.contact-form form {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button{
+  width: 30%;
+  padding: .7em;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #ff6d67;  
+}
+.contact-form form input{
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: white;
+  outline: 0;
+  color: #000;
+  border-bottom: 1px solid #ff6d67;
+}
+
+.contact-form form button {
+  background: green;
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #e5cf81;
+  color: #fff;
+  transition: background-color 0.6s ease-out;
+  outline: 0;
+}
