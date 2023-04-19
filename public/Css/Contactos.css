@@ -31,24 +31,27 @@ ul {
 .logo span {
     color: #ff6d67;
 }
-.img-container{
+
+.img-container {
     background-image: url("Nueva_Gestion-preview.png");
     background-size: cover;
     background-position: center center;
     height: 200px;
     width: 200px;
-    }
-.container1{
+}
+
+.container1 {
     background-color: #fff;
     padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
+
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
     padding: 1em;
 }
 
@@ -74,13 +77,14 @@ ul {
     grid-column: 1 / 2;
 }
 
-.contact-form form button{
+.contact-form form button {
     width: 30%;
     padding: .7em;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #ff6d67;  
+    border-bottom: 1px solid #ff6d67;
 }
+
 .contact-form form input,
 .contact-form form textarea {
     width: 100%;
@@ -113,7 +117,9 @@ ul {
     background: #000;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 }
@@ -123,13 +129,16 @@ ul {
     body {
         padding: 0 4em;
     }
+
     .contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-    .contact-wrapper > * {
+
+    .contact-wrapper>* {
         padding: 2em;
     }
+
     .contact-info h4,
     .contact-info ul,
     .contact-info p {
