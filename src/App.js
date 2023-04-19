@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import AuthForm from './';
+import'./App.css';
 function App() {
+  const [authType, setAuthType] = useState('login');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div class = "color">
+      <img src= 'Gestion.jpg' alt='Gestion' width="250" height="150"/>
+      <AuthForm type={authType} />
+      <button class ="buttonLogin" onClick={() => setAuthType('login')}>Login</button>
+      <button class ="buttonSignUp" onClick={() => setAuthType('signup')}>Sign Up</button>
     </div>
   );
 }

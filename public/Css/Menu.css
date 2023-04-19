@@ -1,0 +1,79 @@
+/* formato del header*/
+.header1 {
+  padding: 5px;
+  font-size: 18px;
+  background-color: #d03932;
+}
+
+.logoPrin{
+    margin-top: -110px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-left: 850px;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+.INFO_ARRIBA{
+    display: flex;
+}
+
+.espacio{
+    margin-top: 10px;
+    margin-right: 300px;
+    margin-left: 350px;
+    margin-bottom:150px;
+}
+			
+			#header {
+                margin: auto;
+                margin-top: 20px;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size: 25px;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#d03932;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+

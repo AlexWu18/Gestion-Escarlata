@@ -1,0 +1,16 @@
+html, body{
+    width: 260px;
+    justify-content: center;
+    padding-top: 1%;
+    padding-inline-start: 350px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+  } 
+
+  .foto{
+    float: left;
+    padding: 10px;
+    display: flex;
+    margin-left: -200%; 
+  
+  }
