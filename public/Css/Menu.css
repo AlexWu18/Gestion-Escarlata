@@ -68,3 +68,10 @@ ol {
 	right: -140px;
 	top: 0px;
 }
+
+#Mapa {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}

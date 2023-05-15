@@ -9,22 +9,24 @@
   <link rel="stylesheet" href="Css/style.css">
   <link rel="icon" href="fotos/Nueva_Gestion-preview.png">
 </head>
+
 <style>
 </style>
 
 <body>
-
-  <img src='fotos/Nueva_Gestion-preview.png' alt='Gestion' width=auto height="250" />
-  <br>
-  <form style="display: flex; flex-direction: column; width: 300px;"></form>
-  <label style="margin-bottom: 0.5rem; font-size:1.2rem; font-weight: bold;">Correo Electrónico</label>
-  <input style="margin-bottom: 1rem; padding: 0.5rem;" type="email" name="email" placeholder="micorreo@ejemplo.com" required>
-  <label style="margin-bottom: 0.5rem; font-size:1.2rem; font-weight: bold;">Contraseña</label>
-  <input style="margin-bottom: 1rem; padding: 0.5rem;" type="password" name="password" placeholder="Contraseña"required>
-  <a style="background-color: #a82b1e; color: #fff; padding: 0.5rem; border-radius: 5px; border: none; font-size: 1.2rem; font-weight: bold; cursor: pointer;" href="Principal.html">Iniciar
-    Sesión</a>
-  <p></p>
-  <a class="CrearCuenta" href="Sign Up.html">Crear cuenta nueva</a>
-</body>
+  <img style="display: flex; margin: auto; height: auto; width: 150px; padding-top: 10px; " src="fotos/Nueva_Gestion-preview.png" alt="Logo de la marca">
+  <section>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="..." id="email" required autofocus>
+        <label>Contraseña</label>
+        <input type="password" placeholder="..." id="password" required>
+        <input type="submit" value="Ingresar">
+    </form>
+    <p>No tienes una cuenta? <a href="signup.html">Registrate</a></p>
+    <p>Volver al Menu <a href="Menu Principal.html">Regresar</a></p>
+</section>
+<script src="Pagina Principal/Login.js"></script>
 
 </html>
