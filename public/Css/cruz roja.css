@@ -1,0 +1,63 @@
+body {
+    background: url("/public/fotos/screencapture-cruzroja.png");
+    width: auto;
+    height: 3750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+a {
+    margin-top: 100px;
+    position: flex;
+    padding: 5px;
+    text-decoration: none;
+    color: #ce0000;
+    font-family: 'Open Sans', 'Open Sans Regular', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+:root {
+    --color: #ff6d67;
+}
+
+a:hover {
+    color:#fff;
+    background-color: #ff6d67;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(#fff);
+}
+
+.contenedor {
+    display: flex;
+    height: auto;
+    justify-content: right;
+    flex-wrap: wrap;
+
+}
+
+/*Pantallas mayores a 1000px*/
+@media (min-width:1000px){
+  a {
+    width: 90px;
+    height: auto;
+  }
+}
+
+/*Pantallas entre 500px y 999px de ancho*/
+@media (min-width:500px) and (max-width:999px){
+  a{
+    width: 60px;
+    height: auto;
+  }
+}
+
+/*Pantallas menores a 500px*/
+@media (max-width:499px){
+  a{
+    width:50px;
+    height: auto;
+  }
+}

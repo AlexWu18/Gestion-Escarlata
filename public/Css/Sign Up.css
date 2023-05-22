@@ -12,7 +12,7 @@ body {
 }
 
 .img-container{
-  background-image: url("Nueva_Gestion-preview.png");
+  background: url("/public/fotos/Nueva_Gestion-preview.png");
   background-size: cover;
   background-position: center center;
   height: 150px;

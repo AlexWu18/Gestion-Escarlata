@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapas</title>
+    <link rel="stylesheet" type="text/css" href="Mapa.css">
+    <link rel="stylesheet" href="Mapa.css">
+    <link rel="icon" href="/public/fotos/Nueva_Gestion-preview.png">
+</head>
+
+<body>
+    <p> Haz click en el boton, si quieres conocer tu ubicacion</p>
+    <button onclick="getLocation()">Donde estoy?</button>
+    
+
+    <div id="map"></div>
+    <script src="Mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+</body>
+
+</html>
