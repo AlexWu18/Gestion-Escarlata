@@ -1,79 +1,101 @@
 <!DOCTYPE html>
-
-<html lang="es" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title> Gestion Escarlata </title>
-    <link rel="stylesheet" href="Css/Principal2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="fotos/Nueva_Gestion-preview.png">
+    <title>Gestion Escarlata</title>
+    <link rel="stylesheet" type="text/css" href="/public/ejeplo/MENU-ej.css">
+    <link rel="stylesheet" type="text/css" href="fullcalendar.min.css">
+    <link rel="icon" href="/public/fotos/Nueva_Gestion-preview.png">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div class="left-menu">
                 <div class="logo">
-                    <img src="/public/fotos/Nueva_Gestion.jpeg" alt="">
+                    <img src="/public/fotos/Nueva_Gestion.jpeg" alt="Logo">
                 </div>
-                <ul class="menu">
-                    <li><a href="Donaciones.html">Donación</a></li>
-                    <li><a href="Mapa/Mapa.html">Mapa</a></li>
-                    <li><a href="Contactos.html">Contactos</a></li>
-                </ul>
-                    <a class="Perfil" onclick="">Perfil</a>
+                <a href="/public/Donaciones.html" class="pi">Donantes</a>
+                <a href="/public/Mapa/Mapa.html" class="pi">Mapas</a>
+                <a href="/public/ejeplo/Agender Citas/Citas.html" class="pi">Agendar</a>
+                <a href="/public/Contactos.html" class="pi">Contactos</a>
+
+            </div>
+            <div class="right-menu">
+                <div class="perfil">
+                    <a href="#" id="perfil-link" class="pi">Perfil</a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="#">Información</a></li>
+                        <a></a>
+                        <li><a href="/public/ejeplo/Ayuda.html">Ayuda</a></li>
+                        <a></a>
+                        <li><a href="/public/Login.html" id="logout">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="content">
-            <div class="text-content">
-                <div class="job">
-
-                    <div class="typing-text">
-                        <span class="one">Bienvenido,</span>
-                        <span class="two">Gestion Escalata</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
     </header>
-
-
-    <footer class="footer">
+    <div class="container-wrapper">
         <div class="container">
-            <div class="footer-column">
-                <h3>Sobre nosotros</h3>
-                <p>Mas Informacion</p>
-
-            </div>
-            <div class="footer-column">
-                <h4>Links</h4>
+            <aside class="left-sidebar">
+                <h2>Citas</h2>
                 <ul>
-                    <li><a href="Menu Principal.html">Inicio</a></li>
-                    <br>
-                    <li><a href="#">Servicios</a></li>
-                    <br>
-                    <li><a href="Contactos.html">Contactos</a></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
                 </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Contactos</h4>
-                <p>Email: GestionEscalata@gmail.com</p>
-                <br>
-                <p>Telefono: +1 (999) 999-9999</p>
-                <br>
-                <div class="media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </aside>
+
+            <main>
+                <main>
+                    <h2 style="font-size: 30px;">Novedades</h2>
+
+                    <div class="news-container">
+                        <div class="news-box" onclick="mostrarInformacion(1)">
+                            <h3>Puedes Agendar tu Cita</h3>
+                            <p>Actualmente...</p>
+                        </div>
+
+                        <div class="news-box" onclick="mostrarInformacion(2)">
+                            <h3>Mapas cercanos</h3>
+                            <p>Existe posiblidad de que...</p>
+                        </div>
+
+                        <div class="news-box" onclick="mostrarInformacion(3)">
+                            <h3>Ser Donante</h3>
+                            <p>la nueva funcion de...</p>
+                        </div>
+                    </div>
+
+                    <div id="informacion" style="display: none;">
+                        <h3 id="info-titulo"></h3>
+                        <p id="info-descripcion"></p>
+                    </div>
+                </main>
+
+            </main>
+
+            <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+            <aside class="right-sidebar">
+                <h2>Calendario</h2>
+                <div id="calendar"></div>
+                <div id="nota">
+                    <h3>Fecha Seleccionada:</h3>
+                    <p id="fecha-seleccionada"></p>
+                    <h3>Nota:</h3>
+                    <p id="nota-contenido"></p>
                 </div>
-            </div>
+            </aside>
         </div>
-        <p style="padding-left: 250px;">©GESTION ESCALARTA 2023. All rights reserved</p>
-    </footer>
+
+        <footer>
+            <p>Derechos de autor &copy; 2023 | Gestion Escalarta</p>
+        </footer>
+        <script src="/public/ejeplo/MENU-EJ.js"></script>
+
 </body>
 
 </html>
