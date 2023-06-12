@@ -15,36 +15,40 @@
         <div class="container1">
             <div class="img-container"></div>
         </div>
-    <section>
-        <h2>Gestion Escalarta</h2>
-        <form id="signupForm">
-            <label>Nombre: <span style="color: red;">*</span></label>
-            <input type="text" placeholder="..." id="name" required autofocus>
-            
-            <label>Apellido: <span style="color: red;">*</span></label>
-            <input type="text" placeholder="..." id="lastname" required>
-            
-            <label>Correo Electrónico: <span style="color: red;">*</span></label>
-            <input type="email" placeholder="..." id="email" required>
-            
-            <label>Contraseña: <span style="color: red;">*</span></label>
-            <input type="password" placeholder="..." id="password" required>
+        <section>
+            <h2>Gestion Escalarta</h2>
+            <form id="signupForm">
+                <label>Nombre: <span style="color: red;">*</span></label>
+                <input type="text" placeholder="..." id="name" required autofocus>
 
-            <label>Fecha Nacimiento: <span style="color: red;">*</span></label>
-            <input type="date" id="date" required />
+                <label>Apellido: <span style="color: red;">*</span></label>
+                <input type="text" placeholder="..." id="lastname" required>
 
-            <label>Telefono: <span style="color: red;">*</span></label>
-            <input type="tel" id="phone" required />
+                <label>Edad: <span style="color: red;">*</span></label>
+                <input type="number" placeholder="..." id="age" required>
 
-            <input type="submit" value="Registro">
+                <label>Fecha Nacimiento: <span style="color: red;">*</span></label>
+                <input type="date" id="birthdate" required />
+
+                <label>Correo Electrónico: <span style="color: red;">*</span></label>
+                <input type="email" placeholder="..." id="email" required>
+
+                <label>Número de Teléfono: <span style="color: red;">*</span></label>
+                <input type="tel" id="phone" required />
+
+                <label>Contraseña: <span style="color: red;">*</span></label>
+                <input type="password" placeholder="..." id="password" required>
+
+                <button type="submit" onclick="submitForm(event)">Enviar</button>
+                <p id="responseMessage"></p>
 
 
-        </form>
+            </form>
 
-        <p>Ya tienes una cuenta? <a href="Login.html">Login</a></p>
-        <p>Volver al Menu <a href="Menu Principal.html">Regresar</a></p>
-    </section>
-    <script src="Pagina Principal/SignUp.js"></script>
+            <p>Ya tienes una cuenta? <a href="Login.html">Login</a></p>
+            <p>Volver al Menu <a href="Menu Principal.html">Regresar</a></p>
+        </section>
+        <script src="Pagina Principal/SignUp.js"></script>
 </body>
 
 </html>

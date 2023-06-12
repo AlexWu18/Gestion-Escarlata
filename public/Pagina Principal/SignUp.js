@@ -1,25 +1,50 @@
+function submitForm(event) {
+    event.preventDefault(); // Prevenir envío del formulario
 
-const signupForm = document.querySelector('#signupForm')
-signupForm.addEventListener('submit', (e)=>{
-    e.preventDefault()
-    const name = document.querySelector('#name').value
-    const lastname = document.querySelector('#lastname').value 
-    const email = document.querySelector('#email').value
-    const password = document.querySelector('#password').value
-    const date = document.querySelector('#date').value
-    const phone = document.querySelector('#phone').value
+    // Obtener valores del formulario
+    var name = document.getElementById('name').value;
+    var lastname = document.getElementById('lastname').value;
+    var age = document.getElementById('age').value;
+    var birthdate = document.getElementById('birthdate').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var password = document.getElementById('password').value;
 
+    // Crear objeto data
+    var data = {
+        "Nombre_Persona": name,
+        "Apellido_Persona": lastname,
+        "Edad_Persona": age,
+        "FechaNacimiento_Persona": birthdate,
+        "Correo_Persona": email,
+        "Numero_Persona": phone,
+        "Contrasena_Persona": password
+    };
 
-    const Users = JSON.parse(localStorage.getItem('users')) || []
-    const isUserRegistered = Users.find(user => user.email === email)
-    if(isUserRegistered){
-        return alert('El usuario ya esta registado!')
-    }
+    fetch('https://nodejs-sequelize-restapi-mssql-production.up.railway.app/api/v1/Persona/POST', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Error en la solicitud');
+        }
+    })
+    .then(result => {
+        console.log('API response:', result);
+        document.getElementById('responseMessage').textContent = 'Solicitud satisfactoria'; // Mostrar mensaje de éxito
 
-    Users.push({name: name, email: email, password: password})
-    localStorage.setItem('users', JSON.stringify(Users))
-    alert('Registro Exitoso!')
-    window.location.href = 'Login.html'
-
-})
+        // Redirigir a otra página
+        window.location.href = 'Login.html';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('responseMessage').textContent = 'No se pudo completar la solicitud'; // Mostrar mensaje de error
+    });
+}
 
